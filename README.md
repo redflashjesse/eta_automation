@@ -1,2 +1,2 @@
-# eta_automation
- python steuerung für eta pelletheizung
+# eta_pelletsheizung
+ Das Projekt ermöglicht es Benutzern, sich auf der ETA Webseite mit Benutzername und Passwort anzumelden, um regelmäßig Daten ihrer ETA Pelletsheizung abzurufen. Diese Daten werden in einem Pickle-Format gespeichert und können für die Analyse der Leistung über einen Zeitraum verwendet werden. Die Analyseergebnisse werden grafisch dargestellt, um Benutzern einen einfachen Überblick über die Leistungsentwicklung ihrer Heizung zu bieten.

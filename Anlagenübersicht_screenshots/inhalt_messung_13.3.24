@@ -1,0 +1,197 @@
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 12:58:25'}, {'Kessel': '50°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,57bar'}, {'Abgas': '45°C'}, {'Restsauerstoff': '---'}, {'Abgasgebläse': '2460U/min'}, {'Verbrauch seit Aschebox leeren': '1254kg'}, {'Inhalt Pelletsbehälter': '44kg'}, {'Kollektor': '29°C'}, {'Ladezustand': '0%'}, {'Angeforderte Leistung': '18,1kW'}, {'Fühler 1 (oben)': '55°C'}, {'Fühler 2': '45°C'}, {'Fühler 3': '36°C'}, {'Fühler 4': '33°C'}, {'Fühler 5': '30°C'}, {'Vorlauf': '43°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '45°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,1°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '31°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:01:16'}, {'Kessel': '51°C'}, {'Kessel Soll': '66°C'}, {'Kesseldruck': '1,57bar'}, {'Abgas': '66°C'}, {'Restsauerstoff': '18,3%'}, {'Abgasgebläse': '2500U/min'}, {'Verbrauch seit Aschebox leeren': '1254kg'}, {'Inhalt Pelletsbehälter': '44kg'}, {'Kollektor': '29°C'}, {'Ladezustand': '0%'}, {'Angeforderte Leistung': '19,1kW'}, {'Fühler 1 (oben)': '54°C'}, {'Fühler 2': '45°C'}, {'Fühler 3': '36°C'}, {'Fühler 4': '33°C'}, {'Fühler 5': '30°C'}, {'Vorlauf': '40°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '45°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,1°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '32°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:03:40'}, {'Kessel': '53°C'}, {'Kessel Soll': '67°C'}, {'Kesseldruck': '1,57bar'}, {'Abgas': '73°C'}, {'Restsauerstoff': '17,4%'}, {'Abgasgebläse': '2530U/min'}, {'Verbrauch seit Aschebox leeren': '1254kg'}, {'Inhalt Pelletsbehälter': '44kg'}, {'Kollektor': '28°C'}, {'Ladezustand': '0%'}, {'Angeforderte Leistung': '20,0kW'}, {'Fühler 1 (oben)': '53°C'}, {'Fühler 2': '44°C'}, {'Fühler 3': '36°C'}, {'Fühler 4': '33°C'}, {'Fühler 5': '30°C'}, {'Vorlauf': '41°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '44°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,1°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '30°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:06:03'}, {'Kessel': '56°C'}, {'Kessel Soll': '67°C'}, {'Kesseldruck': '1,57bar'}, {'Abgas': '84°C'}, {'Restsauerstoff': '16,7%'}, {'Abgasgebläse': '2620U/min'}, {'Verbrauch seit Aschebox leeren': '1254kg'}, {'Inhalt Pelletsbehälter': '44kg'}, {'Kollektor': '28°C'}, {'Ladezustand': '0%'}, {'Angeforderte Leistung': '20,0kW'}, {'Fühler 1 (oben)': '53°C'}, {'Fühler 2': '43°C'}, {'Fühler 3': '36°C'}, {'Fühler 4': '33°C'}, {'Fühler 5': '30°C'}, {'Vorlauf': '42°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '43°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,1°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '28°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:08:26'}, {'Kessel': '60°C'}, {'Kessel Soll': '67°C'}, {'Kesseldruck': '1,57bar'}, {'Abgas': '101°C'}, {'Restsauerstoff': '11,9%'}, {'Abgasgebläse': '2010U/min'}, {'Verbrauch seit Aschebox leeren': '1255kg'}, {'Inhalt Pelletsbehälter': '44kg'}, {'Kollektor': '28°C'}, {'Ladezustand': '0%'}, {'Angeforderte Leistung': '20,0kW'}, {'Fühler 1 (oben)': '52°C'}, {'Fühler 2': '43°C'}, {'Fühler 3': '36°C'}, {'Fühler 4': '33°C'}, {'Fühler 5': '30°C'}, {'Vorlauf': '42°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '43°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,0°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '26°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:10:48'}, {'Kessel': '62°C'}, {'Kessel Soll': '67°C'}, {'Kesseldruck': '1,57bar'}, {'Abgas': '104°C'}, {'Restsauerstoff': '13,4%'}, {'Abgasgebläse': '2110U/min'}, {'Verbrauch seit Aschebox leeren': '1255kg'}, {'Inhalt Pelletsbehälter': '44kg'}, {'Kollektor': '27°C'}, {'Ladezustand': '0%'}, {'Angeforderte Leistung': '20,0kW'}, {'Fühler 1 (oben)': '52°C'}, {'Fühler 2': '43°C'}, {'Fühler 3': '35°C'}, {'Fühler 4': '33°C'}, {'Fühler 5': '30°C'}, {'Vorlauf': '44°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '43°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,0°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '27°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:13:12'}, {'Kessel': '62°C'}, {'Kessel Soll': '67°C'}, {'Kesseldruck': '1,58bar'}, {'Abgas': '114°C'}, {'Restsauerstoff': '11,8%'}, {'Abgasgebläse': '2250U/min'}, {'Verbrauch seit Aschebox leeren': '1255kg'}, {'Inhalt Pelletsbehälter': '43kg'}, {'Kollektor': '27°C'}, {'Ladezustand': '0%'}, {'Angeforderte Leistung': '20,0kW'}, {'Fühler 1 (oben)': '53°C'}, {'Fühler 2': '43°C'}, {'Fühler 3': '35°C'}, {'Fühler 4': '33°C'}, {'Fühler 5': '30°C'}, {'Vorlauf': '44°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '28°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '43°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,0°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '28°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:15:34'}, {'Kessel': '62°C'}, {'Kessel Soll': '66°C'}, {'Kesseldruck': '1,58bar'}, {'Abgas': '119°C'}, {'Restsauerstoff': '12,1%'}, {'Abgasgebläse': '2190U/min'}, {'Verbrauch seit Aschebox leeren': '1255kg'}, {'Inhalt Pelletsbehälter': '43kg'}, {'Kollektor': '26°C'}, {'Ladezustand': '0%'}, {'Angeforderte Leistung': '19,1kW'}, {'Fühler 1 (oben)': '55°C'}, {'Fühler 2': '45°C'}, {'Fühler 3': '36°C'}, {'Fühler 4': '33°C'}, {'Fühler 5': '30°C'}, {'Vorlauf': '43°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '28°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '45°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,0°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '30°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:17:58'}, {'Kessel': '61°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,59bar'}, {'Abgas': '117°C'}, {'Restsauerstoff': '11,1%'}, {'Abgasgebläse': '1930U/min'}, {'Verbrauch seit Aschebox leeren': '1255kg'}, {'Inhalt Pelletsbehälter': '43kg'}, {'Kollektor': '26°C'}, {'Ladezustand': '0%'}, {'Angeforderte Leistung': '16,9kW'}, {'Fühler 1 (oben)': '56°C'}, {'Fühler 2': '47°C'}, {'Fühler 3': '36°C'}, {'Fühler 4': '33°C'}, {'Fühler 5': '30°C'}, {'Vorlauf': '44°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '28°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '47°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,1°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '33°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:20:20'}, {'Kessel': '60°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,59bar'}, {'Abgas': '115°C'}, {'Restsauerstoff': '9,0%'}, {'Abgasgebläse': '1930U/min'}, {'Verbrauch seit Aschebox leeren': '1255kg'}, {'Inhalt Pelletsbehälter': '43kg'}, {'Kollektor': '26°C'}, {'Ladezustand': '0%'}, {'Angeforderte Leistung': '15,5kW'}, {'Fühler 1 (oben)': '58°C'}, {'Fühler 2': '49°C'}, {'Fühler 3': '36°C'}, {'Fühler 4': '34°C'}, {'Fühler 5': '30°C'}, {'Vorlauf': '43°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '28°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '49°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,1°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '35°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:22:43'}, {'Kessel': '62°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,60bar'}, {'Abgas': '121°C'}, {'Restsauerstoff': '8,7%'}, {'Abgasgebläse': '2080U/min'}, {'Verbrauch seit Aschebox leeren': '1255kg'}, {'Inhalt Pelletsbehälter': '43kg'}, {'Kollektor': '26°C'}, {'Ladezustand': '0%'}, {'Angeforderte Leistung': '14,1kW'}, {'Fühler 1 (oben)': '59°C'}, {'Fühler 2': '52°C'}, {'Fühler 3': '37°C'}, {'Fühler 4': '34°C'}, {'Fühler 5': '30°C'}, {'Vorlauf': '43°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '28°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '52°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,1°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '33°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:25:06'}, {'Kessel': '64°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,61bar'}, {'Abgas': '124°C'}, {'Restsauerstoff': '7,5%'}, {'Abgasgebläse': '2100U/min'}, {'Verbrauch seit Aschebox leeren': '1256kg'}, {'Inhalt Pelletsbehälter': '43kg'}, {'Kollektor': '26°C'}, {'Ladezustand': '0%'}, {'Angeforderte Leistung': '12,9kW'}, {'Fühler 1 (oben)': '59°C'}, {'Fühler 2': '54°C'}, {'Fühler 3': '38°C'}, {'Fühler 4': '34°C'}, {'Fühler 5': '30°C'}, {'Vorlauf': '43°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '28°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '54°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,1°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '29°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:27:28'}, {'Kessel': '66°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,62bar'}, {'Abgas': '128°C'}, {'Restsauerstoff': '7,9%'}, {'Abgasgebläse': '2040U/min'}, {'Verbrauch seit Aschebox leeren': '1256kg'}, {'Inhalt Pelletsbehälter': '43kg'}, {'Kollektor': '25°C'}, {'Ladezustand': '0%'}, {'Angeforderte Leistung': '11,7kW'}, {'Fühler 1 (oben)': '60°C'}, {'Fühler 2': '56°C'}, {'Fühler 3': '39°C'}, {'Fühler 4': '34°C'}, {'Fühler 5': '30°C'}, {'Vorlauf': '43°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '28°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '56°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,1°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '27°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:29:51'}, {'Kessel': '66°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,63bar'}, {'Abgas': '124°C'}, {'Restsauerstoff': '8,8%'}, {'Abgasgebläse': '1930U/min'}, {'Verbrauch seit Aschebox leeren': '1256kg'}, {'Inhalt Pelletsbehälter': '42kg'}, {'Kollektor': '25°C'}, {'Ladezustand': '0%'}, {'Angeforderte Leistung': '10,6kW'}, {'Fühler 1 (oben)': '61°C'}, {'Fühler 2': '57°C'}, {'Fühler 3': '40°C'}, {'Fühler 4': '34°C'}, {'Fühler 5': '30°C'}, {'Vorlauf': '44°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '28°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '57°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,1°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '27°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:32:14'}, {'Kessel': '67°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,63bar'}, {'Abgas': '124°C'}, {'Restsauerstoff': '7,9%'}, {'Abgasgebläse': '1920U/min'}, {'Verbrauch seit Aschebox leeren': '1256kg'}, {'Inhalt Pelletsbehälter': '42kg'}, {'Kollektor': '25°C'}, {'Ladezustand': '0%'}, {'Angeforderte Leistung': '9,7kW'}, {'Fühler 1 (oben)': '61°C'}, {'Fühler 2': '58°C'}, {'Fühler 3': '41°C'}, {'Fühler 4': '34°C'}, {'Fühler 5': '30°C'}, {'Vorlauf': '44°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '58°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,1°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '29°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:34:37'}, {'Kessel': '67°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,64bar'}, {'Abgas': '124°C'}, {'Restsauerstoff': '8,0%'}, {'Abgasgebläse': '1870U/min'}, {'Verbrauch seit Aschebox leeren': '1256kg'}, {'Inhalt Pelletsbehälter': '42kg'}, {'Kollektor': '25°C'}, {'Ladezustand': '2%'}, {'Angeforderte Leistung': '8,8kW'}, {'Fühler 1 (oben)': '62°C'}, {'Fühler 2': '59°C'}, {'Fühler 3': '43°C'}, {'Fühler 4': '35°C'}, {'Fühler 5': '30°C'}, {'Vorlauf': '44°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '59°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,1°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '31°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:36:59'}, {'Kessel': '67°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,65bar'}, {'Abgas': '123°C'}, {'Restsauerstoff': '7,4%'}, {'Abgasgebläse': '1810U/min'}, {'Verbrauch seit Aschebox leeren': '1256kg'}, {'Inhalt Pelletsbehälter': '42kg'}, {'Kollektor': '25°C'}, {'Ladezustand': '4%'}, {'Angeforderte Leistung': '7,8kW'}, {'Fühler 1 (oben)': '62°C'}, {'Fühler 2': '60°C'}, {'Fühler 3': '45°C'}, {'Fühler 4': '35°C'}, {'Fühler 5': '30°C'}, {'Vorlauf': '44°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '60°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,2°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '35°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:39:22'}, {'Kessel': '68°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,66bar'}, {'Abgas': '120°C'}, {'Restsauerstoff': '8,1%'}, {'Abgasgebläse': '1700U/min'}, {'Verbrauch seit Aschebox leeren': '1256kg'}, {'Inhalt Pelletsbehälter': '42kg'}, {'Kollektor': '25°C'}, {'Ladezustand': '6%'}, {'Angeforderte Leistung': '6,8kW'}, {'Fühler 1 (oben)': '63°C'}, {'Fühler 2': '60°C'}, {'Fühler 3': '46°C'}, {'Fühler 4': '36°C'}, {'Fühler 5': '31°C'}, {'Vorlauf': '43°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '60°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,2°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '32°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:41:45'}, {'Kessel': '68°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,67bar'}, {'Abgas': '118°C'}, {'Restsauerstoff': '7,1%'}, {'Abgasgebläse': '1630U/min'}, {'Verbrauch seit Aschebox leeren': '1257kg'}, {'Inhalt Pelletsbehälter': '42kg'}, {'Kollektor': '25°C'}, {'Ladezustand': '8%'}, {'Angeforderte Leistung': '6,0kW'}, {'Fühler 1 (oben)': '64°C'}, {'Fühler 2': '61°C'}, {'Fühler 3': '48°C'}, {'Fühler 4': '36°C'}, {'Fühler 5': '31°C'}, {'Vorlauf': '43°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '61°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,2°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '29°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:44:08'}, {'Kessel': '69°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,67bar'}, {'Abgas': '116°C'}, {'Restsauerstoff': '7,4%'}, {'Abgasgebläse': '1520U/min'}, {'Verbrauch seit Aschebox leeren': '1257kg'}, {'Inhalt Pelletsbehälter': '42kg'}, {'Kollektor': '25°C'}, {'Ladezustand': '10%'}, {'Angeforderte Leistung': '6,0kW'}, {'Fühler 1 (oben)': '64°C'}, {'Fühler 2': '62°C'}, {'Fühler 3': '50°C'}, {'Fühler 4': '37°C'}, {'Fühler 5': '31°C'}, {'Vorlauf': '42°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '62°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,2°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '27°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:46:31'}, {'Kessel': '69°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,68bar'}, {'Abgas': '112°C'}, {'Restsauerstoff': '8,7%'}, {'Abgasgebläse': '1410U/min'}, {'Verbrauch seit Aschebox leeren': '1257kg'}, {'Inhalt Pelletsbehälter': '41kg'}, {'Kollektor': '25°C'}, {'Ladezustand': '12%'}, {'Angeforderte Leistung': '6,0kW'}, {'Fühler 1 (oben)': '65°C'}, {'Fühler 2': '62°C'}, {'Fühler 3': '51°C'}, {'Fühler 4': '38°C'}, {'Fühler 5': '31°C'}, {'Vorlauf': '40°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '62°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,2°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '27°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:48:54'}, {'Kessel': '68°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,69bar'}, {'Abgas': '109°C'}, {'Restsauerstoff': '7,9%'}, {'Abgasgebläse': '1360U/min'}, {'Verbrauch seit Aschebox leeren': '1257kg'}, {'Inhalt Pelletsbehälter': '41kg'}, {'Kollektor': '25°C'}, {'Ladezustand': '14%'}, {'Angeforderte Leistung': '6,0kW'}, {'Fühler 1 (oben)': '65°C'}, {'Fühler 2': '63°C'}, {'Fühler 3': '53°C'}, {'Fühler 4': '39°C'}, {'Fühler 5': '31°C'}, {'Vorlauf': '39°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '63°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,2°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '29°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:51:16'}, {'Kessel': '68°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,69bar'}, {'Abgas': '107°C'}, {'Restsauerstoff': '8,9%'}, {'Abgasgebläse': '1310U/min'}, {'Verbrauch seit Aschebox leeren': '1257kg'}, {'Inhalt Pelletsbehälter': '41kg'}, {'Kollektor': '25°C'}, {'Ladezustand': '16%'}, {'Angeforderte Leistung': '6,0kW'}, {'Fühler 1 (oben)': '66°C'}, {'Fühler 2': '63°C'}, {'Fühler 3': '54°C'}, {'Fühler 4': '40°C'}, {'Fühler 5': '31°C'}, {'Vorlauf': '39°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '63°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,3°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '34°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:53:39'}, {'Kessel': '67°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,70bar'}, {'Abgas': '104°C'}, {'Restsauerstoff': '9,0%'}, {'Abgasgebläse': '1310U/min'}, {'Verbrauch seit Aschebox leeren': '1257kg'}, {'Inhalt Pelletsbehälter': '41kg'}, {'Kollektor': '25°C'}, {'Ladezustand': '18%'}, {'Angeforderte Leistung': '6,0kW'}, {'Fühler 1 (oben)': '66°C'}, {'Fühler 2': '64°C'}, {'Fühler 3': '55°C'}, {'Fühler 4': '41°C'}, {'Fühler 5': '31°C'}, {'Vorlauf': '40°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '64°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,2°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '33°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:56:01'}, {'Kessel': '67°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,71bar'}, {'Abgas': '104°C'}, {'Restsauerstoff': '8,7%'}, {'Abgasgebläse': '1320U/min'}, {'Verbrauch seit Aschebox leeren': '1257kg'}, {'Inhalt Pelletsbehälter': '41kg'}, {'Kollektor': '25°C'}, {'Ladezustand': '20%'}, {'Angeforderte Leistung': '6,0kW'}, {'Fühler 1 (oben)': '66°C'}, {'Fühler 2': '64°C'}, {'Fühler 3': '56°C'}, {'Fühler 4': '42°C'}, {'Fühler 5': '31°C'}, {'Vorlauf': '41°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '64°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,3°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '30°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 13:58:24'}, {'Kessel': '67°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,71bar'}, {'Abgas': '103°C'}, {'Restsauerstoff': '8,3%'}, {'Abgasgebläse': '1320U/min'}, {'Verbrauch seit Aschebox leeren': '1257kg'}, {'Inhalt Pelletsbehälter': '41kg'}, {'Kollektor': '25°C'}, {'Ladezustand': '21%'}, {'Angeforderte Leistung': '6,0kW'}, {'Fühler 1 (oben)': '67°C'}, {'Fühler 2': '65°C'}, {'Fühler 3': '57°C'}, {'Fühler 4': '43°C'}, {'Fühler 5': '31°C'}, {'Vorlauf': '43°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '65°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,3°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '27°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 14:00:52'}, {'Kessel': '67°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,72bar'}, {'Abgas': '103°C'}, {'Restsauerstoff': '8,0%'}, {'Abgasgebläse': '1290U/min'}, {'Verbrauch seit Aschebox leeren': '1257kg'}, {'Inhalt Pelletsbehälter': '41kg'}, {'Kollektor': '25°C'}, {'Ladezustand': '23%'}, {'Angeforderte Leistung': '6,0kW'}, {'Fühler 1 (oben)': '67°C'}, {'Fühler 2': '65°C'}, {'Fühler 3': '58°C'}, {'Fühler 4': '44°C'}, {'Fühler 5': '31°C'}, {'Vorlauf': '46°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '65°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,3°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '27°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 14:03:15'}, {'Kessel': '67°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,72bar'}, {'Abgas': '102°C'}, {'Restsauerstoff': '8,7%'}, {'Abgasgebläse': '1290U/min'}, {'Verbrauch seit Aschebox leeren': '1258kg'}, {'Inhalt Pelletsbehälter': '41kg'}, {'Kollektor': '25°C'}, {'Ladezustand': '24%'}, {'Angeforderte Leistung': '6,0kW'}, {'Fühler 1 (oben)': '67°C'}, {'Fühler 2': '66°C'}, {'Fühler 3': '58°C'}, {'Fühler 4': '45°C'}, {'Fühler 5': '32°C'}, {'Vorlauf': '48°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '66°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,3°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '28°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 14:05:37'}, {'Kessel': '67°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,73bar'}, {'Abgas': '102°C'}, {'Restsauerstoff': '8,0%'}, {'Abgasgebläse': '1280U/min'}, {'Verbrauch seit Aschebox leeren': '1258kg'}, {'Inhalt Pelletsbehälter': '41kg'}, {'Kollektor': '24°C'}, {'Ladezustand': '26%'}, {'Angeforderte Leistung': '6,0kW'}, {'Fühler 1 (oben)': '67°C'}, {'Fühler 2': '66°C'}, {'Fühler 3': '59°C'}, {'Fühler 4': '47°C'}, {'Fühler 5': '32°C'}, {'Vorlauf': '47°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '66°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,3°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '31°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 14:08:00'}, {'Kessel': '67°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,74bar'}, {'Abgas': '101°C'}, {'Restsauerstoff': '8,9%'}, {'Abgasgebläse': '1310U/min'}, {'Verbrauch seit Aschebox leeren': '1258kg'}, {'Inhalt Pelletsbehälter': '40kg'}, {'Kollektor': '24°C'}, {'Ladezustand': '27%'}, {'Angeforderte Leistung': '6,0kW'}, {'Fühler 1 (oben)': '67°C'}, {'Fühler 2': '66°C'}, {'Fühler 3': '60°C'}, {'Fühler 4': '48°C'}, {'Fühler 5': '32°C'}, {'Vorlauf': '45°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '66°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,3°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '35°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 14:10:22'}, {'Kessel': '67°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,74bar'}, {'Abgas': '100°C'}, {'Restsauerstoff': '9,5%'}, {'Abgasgebläse': '1270U/min'}, {'Verbrauch seit Aschebox leeren': '1258kg'}, {'Inhalt Pelletsbehälter': '40kg'}, {'Kollektor': '24°C'}, {'Ladezustand': '29%'}, {'Angeforderte Leistung': '6,0kW'}, {'Fühler 1 (oben)': '67°C'}, {'Fühler 2': '66°C'}, {'Fühler 3': '60°C'}, {'Fühler 4': '50°C'}, {'Fühler 5': '32°C'}, {'Vorlauf': '42°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '66°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,3°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '32°C'}, {'Heizkurve': '30°C'}]
+---
+---starting call---
+---logging in---
+---extracting data---
+---printing results data---
+ information_list=[{'Zeit': ' 13.03.2024 14:13:04'}, {'Kessel': '67°C'}, {'Kessel Soll': '65°C'}, {'Kesseldruck': '1,75bar'}, {'Abgas': '101°C'}, {'Restsauerstoff': '7,7%'}, {'Abgasgebläse': '1260U/min'}, {'Verbrauch seit Aschebox leeren': '1258kg'}, {'Inhalt Pelletsbehälter': '40kg'}, {'Kollektor': '24°C'}, {'Ladezustand': '30%'}, {'Angeforderte Leistung': '6,0kW'}, {'Fühler 1 (oben)': '67°C'}, {'Fühler 2': '67°C'}, {'Fühler 3': '61°C'}, {'Fühler 4': '52°C'}, {'Fühler 5': '32°C'}, {'Vorlauf': '39°C'}, {'Heizkurve': '43°C'}, {'Vorlauf': '27°C'}, {'Heizkurve': '27°C'}, {'Vorlauf': '67°C'}, {'Heizkurve': '38°C'}, {'Vorrat': '2273kg'}, {'Außentemperatur': '8,3°C'}, {'Externe Störmeldung': ''}, {'Vorlauf': '31°C'}, {'Heizkurve': '30°C'}]
+---
+Maximale Aufnahmezeit erreicht. Beende die Schleife.
+Die Daten wurden gespeichert als Aufzeichnung_eta_Zehntscheune_data_20240313_125751_20240313_141514.pickle.
+done
+
+Process finished with exit code 0
