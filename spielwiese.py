@@ -50,7 +50,8 @@ def navigate_to_scourse():
     username_input = driver.find_element(By.ID, "txtUsername")
     password_input = driver.find_element(By.ID, "txtPassword")
     login_button = driver.find_element(By.ID, "btnLogin")
-
+    
+    time.sleep(1)
     # Enter your credentials and click the login button
     print('---logging in---')
     username_input.send_keys(username)
