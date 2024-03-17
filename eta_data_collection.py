@@ -1,14 +1,10 @@
-import glob
 import os
-import pickle
 import time
 from datetime import datetime
 
 import pandas as pd
-import plotly.graph_objs as go
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
-from flask import render_template
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -27,7 +23,6 @@ def main():
     """
     # login to the website and navigate to the page with the heating system information, get the html content
     """
-
     # loop for collecting data
     loop_longtime_writing_pickle()
 
@@ -99,14 +94,10 @@ def extract_information(html_content):
             # Finden Sie flex_grow_1 und ml_1_text_right innerhalb von d_flex
             flex_grow_1 = d_flex.find('div', class_='flex-grow-1')
             ml_1_text_right = d_flex.find('div', class_='ml-1 text-right')
+
             # Überprüfen Sie, ob flex_grow_1 und ml_1_text_right vorhanden sind
             if flex_grow_1 and ml_1_text_right:
-                # Extrahieren Sie den Text aus den gefundenen Elementen und geben Sie ihn aus
-                # print("Flex Grow 1:", flex_grow_1.get_text(strip=True))
-                # print("ML 1 Text Right:", ml_1_text_right.get_text(strip=True))
-
                 # append to dict
-
                 information_dict[flex_grow_1.get_text(strip=True)] = ml_1_text_right.get_text(strip=True)
 
     return information_dict, timestamp
@@ -115,7 +106,7 @@ def extract_information(html_content):
 def check_completeness(data, timestamp):
     """
     Check completeness of data in the information_list and fill missing values.
-
+    TODO
     Args:
         data (list): List of dictionaries containing data to be checked.
         timestamp (str): Timestamp of the data.
@@ -185,60 +176,13 @@ def loop_longtime_writing_pickle():
 
         # calc how long the call needed
         end_time = datetime.now()
-        print(f"Der Aufruf dauerte {end_time - start_time} Sekunden.")
+        call_duration = end_time - start_time
+        print(f"Der Aufruf dauerte {call_duration} Sekunden.")
 
         # waiting time for the next call of the website,
         print(f"---waiting for {DATA_CALL_INTERVAL} seconds---")
-        time.sleep(DATA_CALL_INTERVAL)
+        time.sleep(DATA_CALL_INTERVAL - call_duration.total_seconds())
 
-
-def load_data():
-    folder_path = "C:\\Users\\Petau\\Desktop\\Master Maschienenbau\\Programmiermethoden\\eta_pelletsheizung"
-    all_data = []
-    file_paths = glob.glob(folder_path + "/*.pickle")
-    for file_path in file_paths:
-        try:
-            with open(file_path, 'rb') as f:
-                data = pickle.load(f)
-                all_data.extend(data)
-        except FileNotFoundError:
-            continue
-    return all_data
-
-
-# set plots for the data at all pickles
-def create_plots(data):
-    plots = []
-    for entry in data:
-        timestamps = [datetime.strptime(d['Zeit'].strip(), '%d.%m.%Y %H:%M:%S') for d in entry if 'Zeit' in d]
-        for key, value in entry.items():
-            if key != 'Zeit':
-                try:
-                    values = [float(
-                        d[key].replace('°C', '')
-                        .replace('bar', '')
-                        .replace('U/min', '')
-                        .replace('kg', '')
-                        .replace('%', '')
-                        .replace('kW', '')
-                        .replace('°', '')) for d in entry if key in d]
-                    fig = go.Figure()
-                    fig.add_trace(go.Scatter(x=timestamps, y=values, mode='lines', name=key))
-                    fig.update_layout(title=f'Verlauf von {key}', xaxis_title='Zeit', yaxis_title=key)
-                    plots.append(fig.to_json())
-                except ValueError:
-                    continue
-    return plots
-
-
-# @app.route('/')
-def index():
-    print('---loading data for monitoring form file---')
-    data = load_data()
-    print('---creating plots---')
-    plots = create_plots(data)
-    print('---rendering template---')
-    return render_template('index.html', plots=plots)
 
 
 if __name__ == "__main__":

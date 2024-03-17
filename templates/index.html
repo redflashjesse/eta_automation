@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plotly Plots</title>
+    <!-- Include Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Plotly Plots</h1>
+
+    <!-- Plotly plots will be displayed here -->
+    {% for i in range(20) %}
+    <div id="plot{{ i+1 }}"></div>
+    {% endfor %}
+    <!-- Add more divs for additional plots if needed -->
+
+    <script type="text/javascript">
+        // Load plots from Flask and display them
+        var plots = {{ plots|safe }};
+        plots.forEach(function(plotJSON, index) {
+            var plotDivId = "plot" + (index + 1);
+            var plotDiv = document.getElementById(plotDivId);
+            Plotly.newPlot(plotDiv, JSON.parse(plotJSON));
+        });
+    </script>
+</body>
+</html>
