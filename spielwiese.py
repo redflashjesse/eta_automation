@@ -1,18 +1,18 @@
-from dotenv import load_dotenv
 import glob
 import os
-from datetime import datetime, timedelta
+import pickle
+import time
+from datetime import datetime
 
 import pandas as pd
+import plotly.graph_objs as go
+from bs4 import BeautifulSoup
+from dotenv import load_dotenv
+from flask import render_template
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from bs4 import BeautifulSoup
-import time
-import pickle
-import plotly.graph_objs as go
-from flask import Flask, render_template, app
+from selenium.webdriver.support.ui import WebDriverWait
 
 load_dotenv()
 
@@ -52,8 +52,6 @@ def navigate_to_scourse():
     print('---fetch logins ---')
     username_input = driver.find_element(By.ID, "txtUsername")
     password_input = driver.find_element(By.ID, "txtPassword")
-
-
 
     time.sleep(1)
     # Enter your credentials and click the login button
@@ -153,10 +151,12 @@ def check_completeness(data, timestamp):
 
 def loop_longtime_writing_pickle():
     """"loop for collecting data every 15 minutes"""
-    # Setzen Sie die Startzeit der Aufnahme
-    start_time = datetime.now()
+    print('---starting loop for collecting data---')
+    print(f'starttime: {datetime.now()}')
 
     while True:
+        # Setzen Sie die Startzeit der Aufnahme
+        start_time = datetime.now()
         print("---starting call---")
         html_content, driver = navigate_to_scourse()
 
