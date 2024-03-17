@@ -184,6 +184,5 @@ def loop_longtime_writing_pickle():
         time.sleep(DATA_CALL_INTERVAL - call_duration.total_seconds())
 
 
-
 if __name__ == "__main__":
     main()
