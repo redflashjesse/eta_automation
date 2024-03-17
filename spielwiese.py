@@ -34,7 +34,7 @@ def main():
 
 def navigate_to_scourse():
     # Create a WebDriver for Safari
-    driver = webdriver.Safari()
+    driver = webdriver.Firefox()
 
     # Load the login page
     driver.get('https://www.meineta.at/public/index.xhtml?faces-redirect=true')
@@ -52,8 +52,8 @@ def navigate_to_scourse():
     print('---fetch logins ---')
     username_input = driver.find_element(By.ID, "txtUsername")
     password_input = driver.find_element(By.ID, "txtPassword")
-    login_button = driver.find_element(By.ID, "btnLogin")
-    print(login_button)
+
+
 
     time.sleep(1)
     # Enter your credentials and click the login button
@@ -61,6 +61,12 @@ def navigate_to_scourse():
 
     username_input.send_keys(username)
     password_input.send_keys(password)
+
+    # Wait for the login button to be clickable
+    login_button = WebDriverWait(driver, 10).until(
+        EC.element_to_be_clickable((By.ID, "btnLogin"))
+    )
+    # Click the login button
     login_button.click()
 
     # find and open Anlagenübersicht
@@ -151,13 +157,7 @@ def loop_longtime_writing_pickle():
     start_time = datetime.now()
 
     while True:
-        # limited by a variable time
-        if datetime.now() - start_time >= timedelta(hours=0, minutes=15):
-            print("Maximale Aufnahmezeit erreicht. Beende die Schleife.")
-            break
-
         print("---starting call---")
-
         html_content, driver = navigate_to_scourse()
 
         print("---extracting data---")
