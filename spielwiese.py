@@ -40,13 +40,15 @@ def navigate_to_scourse():
     driver.get('https://www.meineta.at/public/index.xhtml?faces-redirect=true')
 
     # Wait for the accept cookies button to be clickable and click it
-    accept_cookies_button = WebDriverWait(driver, 5).until(
+    print('---accept cookies ---')
+    accept_cookies_button = WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable(
             (By.XPATH, "//button[contains(text(), 'Accept cookies') or contains(text(), 'Cookies erlauben')]"))
     )
     accept_cookies_button.click()
 
     # Find the login form elements
+    print('---fetch logins ---')
     username_input = driver.find_element(By.ID, "txtUsername")
     password_input = driver.find_element(By.ID, "txtPassword")
     login_button = driver.find_element(By.ID, "btnLogin")
@@ -54,11 +56,13 @@ def navigate_to_scourse():
     time.sleep(1)
     # Enter your credentials and click the login button
     print('---logging in---')
+
     username_input.send_keys(username)
     password_input.send_keys(password)
     login_button.click()
 
     # find and open Anlagenübersicht
+    print('---opening anlagenübersicht---')
     anlagenuebersicht_button = WebDriverWait(driver, 10).until(
         EC.visibility_of_element_located((By.XPATH, '//div[@class="pr-1" and text()="Anlagenübersicht"]'))
     )
