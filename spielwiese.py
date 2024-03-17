@@ -46,12 +46,14 @@ def navigate_to_scourse():
             (By.XPATH, "//button[contains(text(), 'Accept cookies') or contains(text(), 'Cookies erlauben')]"))
     )
     accept_cookies_button.click()
+    time.sleep(1)
 
     # Find the login form elements
     print('---fetch logins ---')
     username_input = driver.find_element(By.ID, "txtUsername")
     password_input = driver.find_element(By.ID, "txtPassword")
     login_button = driver.find_element(By.ID, "btnLogin")
+    print(login_button)
 
     time.sleep(1)
     # Enter your credentials and click the login button
