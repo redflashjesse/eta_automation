@@ -23,6 +23,7 @@ def load_data():
     print(df.head())
     return df
 
+
 def create_plots(data):
     plots = []
     timestamps = [datetime.strptime(ts.strip(), '%d.%m.%Y %H:%M:%S') for ts in data.index]
@@ -30,12 +31,12 @@ def create_plots(data):
         if column != 'Zeit':
             try:
                 values = data[column].apply(lambda x: float(str(x).replace('°C', '')
-                                                              .replace('bar', '')
-                                                              .replace('U/min', '')
-                                                              .replace('kg', '')
-                                                              .replace('%', '')
-                                                              .replace('kW', '')
-                                                              .replace('°', '')))
+                                                            .replace('bar', '')
+                                                            .replace('U/min', '')
+                                                            .replace('kg', '')
+                                                            .replace('%', '')
+                                                            .replace('kW', '')
+                                                            .replace('°', '')))
                 fig = go.Figure()
                 fig.add_trace(go.Scatter(x=timestamps, y=values, mode='lines', name=column))
                 fig.update_layout(title=f'Verlauf von {column}', xaxis_title='Zeit', yaxis_title=column)
@@ -43,6 +44,7 @@ def create_plots(data):
             except ValueError:
                 continue
     return plots
+
 
 if __name__ == "__main__":
     app.run(debug=True)
