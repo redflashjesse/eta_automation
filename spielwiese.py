@@ -72,13 +72,8 @@ def extract_information(html_content):
     """
     Extract information from the HTML content
     """
-    # Verwenden Sie BeautifulSoup, um den HTML-Code zu analysieren und den Inhalt der gewünschten <div>-Elemente zu extrahieren
     soup = BeautifulSoup(html_content, "html.parser")
 
-    # Finden Sie alle <div>-Elemente mit einer bestimmten CSS-Klasse (hier als Beispiel "carousel-inner")
-    response = soup.find_all("div",
-                             class_="carousel-inner")  # todo unterschied soup und response für den find_all Befehl
-    eintraege = soup.find_all("div", class_="d-flex")
     # find timestamp for this update call
     timestamp = soup.find("div", class_="text-muted small").text  # list-group-item d-flex justify-content-en")#.text
     # empty list to store the extracted information
@@ -113,7 +108,7 @@ def check_completeness(data, timestamp):
 
     Args:
         data (list): List of dictionaries containing data to be checked.
-
+        timestamp (str): Timestamp of the data.
     Returns:
         list: List of dictionaries with missing values filled or empty if more than three missing values.
     """
@@ -149,13 +144,9 @@ def loop_longtime_writing_pickle():
     # Setzen Sie die Startzeit der Aufnahme
     start_time = datetime.now()
 
-    # open a df
-    df = pd.DataFrame()
-
     while True:
         # limited by a variable time
-        if datetime.now() - start_time >= timedelta(hours=0
-                , minutes=15):
+        if datetime.now() - start_time >= timedelta(hours=0, minutes=15):
             print("Maximale Aufnahmezeit erreicht. Beende die Schleife.")
             break
 
@@ -165,16 +156,14 @@ def loop_longtime_writing_pickle():
 
         print("---extracting data---")
         information_dict, timestamp = extract_information(html_content)
-        #print("---printing results data---")
-        #print(f' {information_dict=}')
 
         # todo later
-        #print("---checking completeness---")
-        #information_dict = check_completeness(information_dict, timestamp)
+        # print("---checking completeness---")
+        # information_dict = check_completeness(information_dict, timestamp)
         print('---')
         # close the driver
         driver.close()
-        #specify the dimestamp column as index
+        # specify the dimestamp column as index
 
         df = pd.DataFrame([information_dict])
         df.set_index('Zeit', inplace=True)
@@ -192,12 +181,9 @@ def loop_longtime_writing_pickle():
         end_time = datetime.now()
         print(f"Der Aufruf dauerte {end_time - start_time} Sekunden.")
 
-
         # waiting time for the next call of the website,
         print(f"---waiting for {DATA_CALL_INTERVAL} seconds---")
         time.sleep(DATA_CALL_INTERVAL)
-
-
 
 
 def load_data():
@@ -223,9 +209,13 @@ def create_plots(data):
             if key != 'Zeit':
                 try:
                     values = [float(
-                        d[key].replace('°C', '').replace('bar', '').replace('U/min', '').replace('kg', '').replace('%',
-                                                                                                                   '').replace(
-                            'kW', '').replace('°', '')) for d in entry if key in d]
+                        d[key].replace('°C', '')
+                        .replace('bar', '')
+                        .replace('U/min', '')
+                        .replace('kg', '')
+                        .replace('%', '')
+                        .replace('kW', '')
+                        .replace('°', '')) for d in entry if key in d]
                     fig = go.Figure()
                     fig.add_trace(go.Scatter(x=timestamps, y=values, mode='lines', name=key))
                     fig.update_layout(title=f'Verlauf von {key}', xaxis_title='Zeit', yaxis_title=key)
