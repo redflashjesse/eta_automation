@@ -1,0 +1,6 @@
+Zeit,Kessel,Kessel Soll,Kesseldruck,Abgas,Restsauerstoff,Abgasgebläse,Verbrauch seit Aschebox leeren,Inhalt Pelletsbehälter,Kollektor,Ladezustand,Angeforderte Leistung,Fühler 1 (oben),Fühler 2,Fühler 3,Fühler 4,Fühler 5,Vorlauf,Heizkurve,Vorrat,Außentemperatur,Externe Störmeldung
+ 17.03.2024 11:33:18,67°C,57°C,"1,87bar",44°C,---,0U/min,1323kg,45kg,78°C,52%,xxx,69°C,69°C,68°C,69°C,41°C,30°C,30°C,2203kg,"8,8°C",
+ 17.03.2024 11:34:27,67°C,57°C,"1,87bar",44°C,---,0U/min,1323kg,45kg,79°C,52%,xxx,69°C,69°C,68°C,69°C,41°C,27°C,30°C,2203kg,"8,8°C",
+ 17.03.2024 11:35:37,67°C,57°C,"1,87bar",45°C,---,0U/min,1323kg,45kg,79°C,52%,xxx,69°C,69°C,68°C,69°C,41°C,34°C,30°C,2203kg,"8,8°C",
+ 17.03.2024 11:36:46,67°C,57°C,"1,87bar",45°C,---,0U/min,1323kg,45kg,78°C,52%,xxx,69°C,69°C,68°C,69°C,41°C,27°C,30°C,2203kg,"8,9°C",
+ 17.03.2024 11:45:08,67°C,57°C,"1,87bar",44°C,---,0U/min,1323kg,45kg,75°C,52%,xxx,69°C,69°C,68°C,69°C,41°C,27°C,30°C,2203kg,"9,1°C",

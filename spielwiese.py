@@ -16,40 +16,20 @@ from flask import Flask, render_template, app
 
 load_dotenv()
 
+# grab secrets from file
 username = os.getenv("USERNAME")
 password = os.getenv("PASSWORD")
 
-app = Flask(__name__)
+DATA_CALL_INTERVAL = 60  # in seconds
 
 
 def main():
     """
     # login to the website and navigate to the page with the heating system information, get the html content
-
     """
-    # setting the option to show the monitoring tool
-    show_monitoring = False
 
-    # extract information from a screenshot of the webpage using OCR (Optical Character Recognition) with Tesseract
-    # extractinfos_by_driver = extract_infos_screeshot(driver)
-
-    # sort out the data from the OCR result and print it
-    # data = sort_out_data(extractinfos_by_driver)
-
-    # print the extracted data at pickle
-
-    # find and print the heating system information
-    # extract_heating_system_info(driver)
-
-    # loop for collecting data every 15 minutes
-    if not show_monitoring:
-        loop_longtime_writing_pickle()
-    # open flask app as monitoring tool
-    if show_monitoring:
-        (app.run(debug=True))
-    else:
-        pass
-    print('done')
+    # loop for collecting data
+    loop_longtime_writing_pickle()
 
 
 def navigate_to_scourse():
@@ -60,8 +40,10 @@ def navigate_to_scourse():
     driver.get('https://www.meineta.at/public/index.xhtml?faces-redirect=true')
 
     # Wait for the accept cookies button to be clickable and click it
-    accept_cookies_button = WebDriverWait(driver, 15).until(
-        EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Cookies erlauben')]")))
+    accept_cookies_button = WebDriverWait(driver, 5).until(
+        EC.element_to_be_clickable(
+            (By.XPATH, "//button[contains(text(), 'Accept cookies') or contains(text(), 'Cookies erlauben')]"))
+    )
     accept_cookies_button.click()
 
     # Find the login form elements
@@ -80,12 +62,8 @@ def navigate_to_scourse():
         EC.visibility_of_element_located((By.XPATH, '//div[@class="pr-1" and text()="Anlagenübersicht"]'))
     )
     anlagenuebersicht_button.click()
-    time.sleep(6)
+    time.sleep(3)
     html_content = driver.page_source
-
-    # loop through each div of the Anlagenübersicht by click on the div ml-auto i class="fa fa-chevron-right" for each div
-    # for each div, set a screenshot, named by the div text-body
-
     return html_content, driver
 
 
@@ -103,42 +81,29 @@ def extract_information(html_content):
     # find timestamp for this update call
     timestamp = soup.find("div", class_="text-muted small").text  # list-group-item d-flex justify-content-en")#.text
     # empty list to store the extracted information
-    information_list = [{"Zeit": timestamp}, ]
+    information_dict = {"Zeit": timestamp}
 
-    # Iterate over each carousel item
-    """for item in eintraege:
-        #print(f'{item=}\nEnde item')
-
-        # Find card title
-        card_title = item.find('div', class_='card-title')
-        h5_element = item.find('div', class_='h5')
-        fubname = item.get_text(strip=False)
-        #print(f'{card_title=} : {h5_element=} : {fubname=}')
-        """
     # Find list items
     list_items = soup.find_all('li', class_='list-group-item')
-    # print(f'{list_items=}')
     for li in list_items:
         # Finden Sie das d_flex-Element im aktuellen list_item
         d_flex = li.find('div', class_='d-flex')
-
         # Überprüfen Sie, ob d_flex vorhanden ist
         if d_flex:
             # Finden Sie flex_grow_1 und ml_1_text_right innerhalb von d_flex
             flex_grow_1 = d_flex.find('div', class_='flex-grow-1')
             ml_1_text_right = d_flex.find('div', class_='ml-1 text-right')
-
             # Überprüfen Sie, ob flex_grow_1 und ml_1_text_right vorhanden sind
             if flex_grow_1 and ml_1_text_right:
                 # Extrahieren Sie den Text aus den gefundenen Elementen und geben Sie ihn aus
                 # print("Flex Grow 1:", flex_grow_1.get_text(strip=True))
                 # print("ML 1 Text Right:", ml_1_text_right.get_text(strip=True))
-                # append as dic in list information_list
-                information_list.append({flex_grow_1.get_text(strip=True): ml_1_text_right.get_text(strip=True)})
 
-        # print("\n")
-    # print(f'{information_list=}')
-    return information_list, timestamp
+                # append to dict
+
+                information_dict[flex_grow_1.get_text(strip=True)] = ml_1_text_right.get_text(strip=True)
+
+    return information_dict, timestamp
 
 
 def check_completeness(data, timestamp):
@@ -174,7 +139,7 @@ def check_completeness(data, timestamp):
         else:
             # if more than 3 keys are missing, add an empty entry
             complete_data.append({'Zeit': timestamp, '': ''})
-
+    print('--- data checked for completeness ---')
     return complete_data
 
 
@@ -198,53 +163,40 @@ def loop_longtime_writing_pickle():
         html_content, driver = navigate_to_scourse()
 
         print("---extracting data---")
-        information_list, timestamp = extract_information(html_content)
-        print("---printing results data---")
-        print(f' {information_list=}')
-        print("---checking completeness---")
-        information_list = check_completeness(information_list, timestamp)
+        information_dict, timestamp = extract_information(html_content)
+        #print("---printing results data---")
+        #print(f' {information_dict=}')
+
+        # todo later
+        #print("---checking completeness---")
+        #information_dict = check_completeness(information_dict, timestamp)
         print('---')
         # close the driver
         driver.close()
+        #specify the dimestamp column as index
 
-        # open the pickle file and load the data
-        try:
-            with open('data.pickle', 'rb') as f:
-                data = pickle.load(f)
-        except FileNotFoundError:
-            data = []
+        df = pd.DataFrame([information_dict])
+        df.set_index('Zeit', inplace=True)
+        print(df.head())
 
-        df_temp = pd.DataFrame(information_list)
-        # Fügen Sie die aktuellen Informationen zur DataFrame hinzu
-        df = df._append(df_temp, ignore_index=True)
+        # check if a . csv already exists
+        if os.path.exists('data.csv'):
+            # append the data to the existing .csv
+            df.to_csv('data.csv', mode='a', header=False)
+        else:
+            # save the data to a .csv
+            df.to_csv('data.csv')
 
-        # Fügen Sie eine Leerzeile hinzu
-        # df = df._append(pd.Series(), ignore_index=True)
+        # calc how long the call needed
+        end_time = datetime.now()
+        print(f"Der Aufruf dauerte {end_time - start_time} Sekunden.")
 
-        print(f'{df=}')
 
-        # Fügen Sie die aktuellen Informationen zur Datenliste hinzu
-        data.append(information_list)
-        # einfügen eines umbruchs im pickle
-        data.append('\n')
+        # waiting time for the next call of the website,
+        print(f"---waiting for {DATA_CALL_INTERVAL} seconds---")
+        time.sleep(DATA_CALL_INTERVAL)
 
-        # Schreiben Sie die aktualisierten Daten zurück in die pickle-Datei
-        with open('data.pickle', 'wb') as f:
-            pickle.dump(data, f)
 
-        # waiting time for the next call of the website, basically 15 minutes
-        time.sleep(120)
-
-    # set the end time of the recording
-    end_time = datetime.now()
-
-    # name the pickle file with the start and end time
-    file_name = f"Aufzeichnung_eta_Zehntscheune_data_{start_time.strftime('%Y%m%d_%H%M%S')}_{end_time.strftime('%Y%m%d_%H%M%S')}.pickle"
-    os.rename('data.pickle', file_name)
-    # name the df file by file_name
-    df.save(file_name + '.csv')
-    print(f'{df=}')
-    print(f"Die Daten wurden gespeichert als {file_name}.")
 
 
 def load_data():
@@ -282,7 +234,7 @@ def create_plots(data):
     return plots
 
 
-@app.route('/')
+# @app.route('/')
 def index():
     print('---loading data for monitoring form file---')
     data = load_data()
