@@ -1,5 +1,4 @@
 from dotenv import load_dotenv
-
 import glob
 import os
 from datetime import datetime, timedelta
@@ -54,15 +53,15 @@ def main():
 
 
 def navigate_to_scourse():
-    # Create a WebDriver for Firefox
+    # Create a WebDriver for Safari
     driver = webdriver.Safari()
 
     # Load the login page
     driver.get('https://www.meineta.at/public/index.xhtml?faces-redirect=true')
 
     # Wait for the accept cookies button to be clickable and click it
-    accept_cookies_button = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Accept cookies')]")))
+    accept_cookies_button = WebDriverWait(driver, 15).until(
+        EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Cookies erlauben')]")))
     accept_cookies_button.click()
 
     # Find the login form elements
@@ -184,6 +183,9 @@ def loop_longtime_writing_pickle():
     # Setzen Sie die Startzeit der Aufnahme
     start_time = datetime.now()
 
+    # open a df
+    df = pd.DataFrame()
+
     while True:
         # limited by a variable time
         if datetime.now() - start_time >= timedelta(hours=0
@@ -212,14 +214,13 @@ def loop_longtime_writing_pickle():
         except FileNotFoundError:
             data = []
 
-        # open a pd.df and append the new data
-        if not df:
-            df = pd.DataFrame(data)
-        else:
-            pass
+        df_temp = pd.DataFrame(information_list)
+        # Fügen Sie die aktuellen Informationen zur DataFrame hinzu
+        df = df._append(df_temp, ignore_index=True)
 
-        df = df.append(information_list, ignore_index=False)
-        df = df.append('\n', ignore_index=False)
+        # Fügen Sie eine Leerzeile hinzu
+        # df = df._append(pd.Series(), ignore_index=True)
+
         print(f'{df=}')
 
         # Fügen Sie die aktuellen Informationen zur Datenliste hinzu
