@@ -2,6 +2,7 @@ import plotly.graph_objs as go
 from flask import render_template, Flask
 from datetime import datetime
 import pandas as pd
+import re
 
 app = Flask(__name__)
 
@@ -30,16 +31,20 @@ def create_plots(data):
     for column in data.columns:
         if column != 'Zeit':
             try:
-                values = data[column].apply(lambda x: float(str(x).replace('°C', '')
-                                                            .replace('bar', '')
-                                                            .replace('U/min', '')
-                                                            .replace('kg', '')
-                                                            .replace('%', '')
-                                                            .replace('kW', '')
-                                                            .replace('°', '')))
-                fig = go.Figure()
-                fig.add_trace(go.Scatter(x=timestamps, y=values, mode='lines', name=column))
-                fig.update_layout(title=f'Verlauf von {column}', xaxis_title='Zeit', yaxis_title=column)
+                # Extract values and units from cells
+                values = []
+                units = ''
+                for cell in data[column]:
+                    match = re.match(r"([-+]?\d*\.\d+|\d+)(.*)", str(cell))
+                    if match:
+                        values.append(float(match.group(1)))
+                        units = match.group(2).strip()
+                    else:
+                        values.append(float('nan'))
+                fig = go.Figure() # todo maker thourough an x setting and line setting for the plot betwenn the points --
+                fig.add_trace(go.Scatter(x=timestamps, y=values, mode='markers', name=column))
+                # Append units to y-axis title
+                fig.update_layout(title=f'Verlauf von {column}', xaxis_title='Zeit', yaxis_title=f"{column} [{units}]")
                 plots.append(fig.to_json())
             except ValueError:
                 continue

@@ -24,7 +24,7 @@ def main():
     # login to the website and navigate to the page with the heating system information, get the html content
     """
     # loop for collecting data
-    loop_longtime_writing_pickle()
+    loop_longtime_writing_csv()
 
 
 def navigate_to_scourse():
@@ -140,8 +140,8 @@ def check_completeness(data, timestamp):
     return complete_data
 
 
-def loop_longtime_writing_pickle():
-    """"loop for collecting data every 15 minutes"""
+def loop_longtime_writing_csv():
+    """"loop for collecting data every minute"""
     print('---starting loop for collecting data---')
     print(f'starttime: {datetime.now()}')
 
@@ -182,6 +182,12 @@ def loop_longtime_writing_pickle():
         # waiting time for the next call of the website,
         print(f"---waiting for {DATA_CALL_INTERVAL} seconds---")
         time.sleep(DATA_CALL_INTERVAL - call_duration.total_seconds())
+
+def csv_to_pickle():
+    # load the data from the .csv
+    df = pd.read_csv('data.csv')
+    # save the data to a .pkl
+    df.to_pickle('data.pkl')
 
 
 if __name__ == "__main__":
