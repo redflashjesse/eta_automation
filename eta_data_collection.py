@@ -152,7 +152,7 @@ def loop_longtime_writing_csv():
         html_content, driver = navigate_to_scourse()
 
         print("---extracting data---")
-        information_dict, timestamp = extract_information(html_content)
+        information_dict, timestamp =  extract_information(html_content)
 
         # todo later
         # print("---checking completeness---")

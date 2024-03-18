@@ -31,11 +31,11 @@ def create_plots(data):
     for column in data.columns:
         if column != 'Zeit':
             try:
-                # Extract values and units from cells
+                # Extract values and units from cells separately
                 values = []
                 units = ''
                 for cell in data[column]:
-                    match = re.match(r"([-+]?\d*\.\d+|\d+)(.*)", str(cell))
+                    match = re.match(r"([-+]?\d*[.,]\d+|\d+)(.*)", str(cell))
                     if match:
                         values.append(float(match.group(1)))
                         units = match.group(2).strip()
@@ -51,5 +51,9 @@ def create_plots(data):
     return plots
 
 
+def plot_and_visualize():
+    app.run(debug=True, port=6000)
+
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    plot_and_visualize()
